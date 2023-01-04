@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        margin: 20px;
+        font-size: 54px;
+font-weight: 600;
+        color: #385013;
+        text-align: center;
+      }
+      h2 {
+        font-size: 28px;
+
+        color: #323232;
+        text-align: center;
+        border: 1px solid #323232;
+        border-radius: 6px;
+        margin: 0px 50px 20px;
+        padding: 10px;
+      }
+
+      p {
+        color: #323232;
+        font-size: 16px;
+        line-height: 120%;
+      }
+      img {
+        display: block;
+        max-width: 700px;
+        margin: 0 auto;
+        border-radius: 12px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 10px 10px;
+        background-image: linear-gradient(#f4e5c2, #fbf9f5 );
+        border-radius: 16px;
+      }
+      .description {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .familyBusiness {
+        font-weight: bolder;
+      }
+      .map {
+        max-width: 700px;
+        margin: 0 auto;
+padding: 0px 0px 10px;
+      }
+      a{
+        color: #385013;
+        font-size: 18px;
+      }
+      a:link {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration:underline;
+      }
+
+      button {
+        
+        display: block;
+margin: 0 auto;
+padding: 20px;
+border-color: #323232;
+font-size: 18px;
+border-radius: 8px;
+border-width: 1px;
+box-shadow: #3e3e3e 0px 8px 8px 0;
+cursor: pointer;
+transition: all 200ms ease-in-out;
+
+      }
+     
+        
+       
+        
+      button:hover {
+        color: #f4e5c2;
+        background: #385013;
+          
+    
+      }
+    
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pansjonat Orle</h1>
+      <h2><em>Wypoczynek w górach</em></h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/778/original/orle.jpg?1655660057"
+        alt="Pansjonat Orle"
+        width="100%"
+      />
+      <div class="description">
+        <p>
+          Jesteśmy <span class="familyBusiness">rodzinną firmą</span>, która od ponad 20 lat prowadzi kameralny
+          pensjonat w uroczej wsi nieopodal Krynicy-Zdrój.
+          <br /><br />Niewątpliwym atutem są tu wspaniałe, górskie widoki o
+          każdej porze roku, z dala od zgiełku miast. Dziewicza natura sprzyja
+          odnowie ciała i ducha. Rześkie, zdrowe powietrze i krystalicznie
+          czysta woda z własnej studni, to jedne z wielu korzyści, jakie
+          oferujemy.<br /><br />Dbamy także o podniebienia naszych gości.
+          Serwujemy sezonowe, domowe potrawy oraz regionalne dania. Zaopatrujemy
+          się u lokalnych rolników i przedsiębiorców prowadzących tradycyjne,
+          ekologiczne gospodarstwa.
+          <hr />
+        </p>
+      </div>
+      
+      <div class="map"><a
+        href="https://www.google.com/maps/place/Piorunka+54,+33-380/@49.471132,20.9545433,17z/data=!3m1!4b1!4m5!3m4!1s0x473dded3b07e1825:0xf3435bb7cd90da69!8m2!3d49.471132!4d20.956732"
+        target="_blank"
+        title="Pansjonat Orle map"
+      >
+      
+        <strong>Jak nas znaleźć</strong>
+      </a></div>
+      <button>Zarezerwować pokój</button>
+    </div>
+    <script>
+        function reserve() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let age = prompt("How old are you?");
+
+        if (age >= 18) {
+          alert(name + ", room booked😊 Have a nice holiday! ☀️");
+        } else {
+          alert(name + ", you can't book a room 😒");
+        }
+
+    }
+let buttonReserve = document.querySelector("button");
+      buttonReserve.addEventListener("click", reserve);
+    </script>
+  </body>
+</html>
